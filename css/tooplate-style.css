@@ -19,9 +19,9 @@ body {
 
 .small-text {
   color: #5b5b5b;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: - 16px;
   border-radius: 50px;
   letter-spacing: 0.2px;
 }
@@ -113,21 +113,24 @@ b, strong {
   margin-top: 5px;
   min-width: 260px;
   position: relative;
+  white-space: nowrap;
 }
 
 .animated-item {
   color: #ffc200;
+  margin-right: 10px; 
 }
 
+
 .animated-item {
-  font-size: 38px;
+  font-size: 40px;
   line-height: inherit;
   display: block;
   opacity: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20;
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
@@ -267,14 +270,20 @@ b, strong {
 }
 
 .color-mode {
+  display: flex;
+  align-items: center;
   font-weight: bold;
   cursor: pointer;
 }
 
 .color-mode-icon {
-  position: relative;
-  right: 6px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 6px;
+  color: #000;
 }
+
 .color-mode-icon:after {
   font-family: 'unicons';
   content: '\ea9f';
@@ -282,12 +291,33 @@ b, strong {
   font-weight: 300;
   font-style: normal;
 }
+
 .color-mode-icon.active:after {
-  font-family: 'unicons';
   content: '\eb65';
-  font-size: 30px;
   color: #ffffff;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .color-mode {
+    font-size: 16px;
+  }
+
+  .color-mode-icon {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-mode {
+    font-size: 14px;
+  }
+
+  .color-mode-icon {
+    font-size: 20px;
+  }
+}
+
 
 .dark-mode {
   background: #0c0c0d;
@@ -516,7 +546,7 @@ b, strong {
     padding: 3px 20px;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 1000px) {
 	.animated-info {
 		min-width: 200px;
 	}
@@ -542,7 +572,7 @@ b, strong {
     margin: 10px 0 0 0;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 325px) {
   .animated-text {
     margin-top: 0;
     white-space: nowrap; /* Prevent text from wrapping */
