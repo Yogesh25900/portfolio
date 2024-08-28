@@ -542,13 +542,19 @@ b, strong {
     margin: 10px 0 0 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .animated-text {
     margin-top: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
   }
 
   .about-text {
     text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
   }
 
   .full-screen {
