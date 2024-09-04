@@ -4490,3 +4490,11 @@ td:last-child {
     }
    
 }
+@media screen and (max-width: 300px) {
+
+.no-js .s-intro__content-title, .no-js .s-intro__content-btns, .ss-show .s-intro__content-title, .ss-show .s-intro__content-btns {
+    font-size: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+}
