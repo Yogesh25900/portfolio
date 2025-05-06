@@ -4418,15 +4418,11 @@ td:last-child {
 
 
 
-
-
 .entry__thumb {
-    width: 100%;            /* or a fixed width like 300px */
-    height: 300px;          /* set desired height */
+    width: 100%;
+    aspect-ratio: 16 / 9; /* or 4 / 3 or 1 / 1 depending on your design */
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .entry__thumb img {
@@ -4434,4 +4430,6 @@ td:last-child {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
+
